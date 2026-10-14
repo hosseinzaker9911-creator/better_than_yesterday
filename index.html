@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="وبلاگ فارسی رشد فردی و موفقیت: مقاله‌های کوتاه و کاربردی درباره عادت، تمرکز، اهمال‌کاری، ذهنیت رشد و هدف‌گذاری، به‌همراه ویدئو و پادکست پیشنهادی.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:title" content="بهتر از دیروز">
+<meta property="og:description" content="وبلاگ فارسی رشد فردی و موفقیت: مقاله‌های کوتاه و کاربردی درباره عادت، تمرکز، اهمال‌کاری، ذهنیت رشد و هدف‌گذاری، به‌همراه ویدئو و پادکست پیشنهادی.">
+<link rel="canonical" href="https://hosseinzaker9911-creator.github.io/better_than_yesterday/">
+<meta property="og:url" content="https://hosseinzaker9911-creator.github.io/better_than_yesterday/">
+<meta name="theme-color" content="#0E7C70">
+<title>بهتر از دیروز</title>
+<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: sticky nav, split hero with a stepped-path drawing, filterable article grid, in-page reader, video and podcast bands */
+:root{
+  --bg:#F3F7F6; --surface:#FFFFFF; --fg:#0E2528; --muted:#51676A; --line:#D5E1DF;
+  --accent:#0E7C70; --accent-ink:#FFFFFF; --warm:#D98E04; --tint:#E3EFEC;
+  --font-display:'Lalezar','Vazirmatn','Vazir',Tahoma,'Noto Sans Arabic',sans-serif;
+  --font-body:'Vazirmatn','Vazir',Tahoma,'Segoe UI','Noto Sans Arabic',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B1A1C; --surface:#112528; --fg:#E6F1EF; --muted:#9DB5B2; --line:#22393C;
+  --accent:#3CC4B2; --accent-ink:#062421; --warm:#F0B84A; --tint:#143034; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0B1A1C; --surface:#112528; --fg:#E6F1EF; --muted:#9DB5B2; --line:#22393C;
+  --accent:#3CC4B2; --accent-ink:#062421; --warm:#F0B84A; --tint:#143034; color-scheme:dark;}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:16px;line-height:1.9}
+*{box-sizing:border-box}
+a{color:inherit}
+button{font-family:inherit;font-size:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin-inline:auto;padding-inline:16px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.35}
+.display{font-family:var(--font-display);font-weight:400}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;padding-block:10px}
+.brand{font-family:var(--font-display);font-size:1.75rem;text-decoration:none;display:flex;align-items:center;gap:8px;margin-inline-end:auto}
+.brand i{display:inline-block;width:12px;height:12px;background:var(--warm);border-radius:50%}
+.nav{display:flex;gap:4px;flex-wrap:wrap}
+.nav a{text-decoration:none;padding:4px 12px;border-radius:99px;font-size:.95rem;color:var(--muted)}
+.nav a:hover{background:var(--tint);color:var(--fg)}
+.theme{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:2px 12px;font-size:.85rem}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding-block:56px 40px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.2}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--muted);max-width:34em;margin:16px 0 24px}
+.cta{display:inline-flex;gap:8px;align-items:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700}
+.cta.ghost{background:transparent;color:var(--fg);border:1px solid var(--line);margin-inline-start:8px}
+.hero svg{width:100%;height:auto;max-width:100%}
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:.9rem}
+.stats b{display:block;font-family:var(--font-display);font-weight:400;font-size:1.8rem;color:var(--fg);line-height:1.2}
+
+/* sections */
+section{padding-block:40px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.sec-head h2{font-family:var(--font-display);font-weight:400;font-size:2.2rem}
+.sec-head p{margin:0;color:var(--muted);font-size:.95rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:2px 16px;font-size:.9rem}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+
+/* articles */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px;text-align:start;min-width:0;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.card.feature{grid-column:1/-1;background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.card.feature .meta,.card.feature p{color:inherit;opacity:.8}
+.card.feature h3{font-size:2rem}
+.card h3{font-size:1.3rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.meta{display:flex;gap:12px;font-size:.8rem;color:var(--muted);align-items:center}
+.tag{background:var(--tint);color:var(--accent);padding:0 12px;border-radius:99px;font-weight:500}
+.card.feature .tag{background:var(--warm);color:#1b1300}
+
+/* reader */
+.reader{padding-block:40px 64px;max-width:44rem;margin-inline:auto}
+.back{border:0;background:none;color:var(--accent);font-weight:700;padding:0;margin-bottom:24px}
+.reader h1{font-family:var(--font-display);font-weight:400;font-size:clamp(2rem,5vw,3rem);margin:12px 0 8px}
+.reader .lead{font-size:1.15rem;color:var(--muted);margin:0 0 24px}
+.reader p{font-size:1.05rem;margin:0 0 20px}
+.reader h3{font-size:1.3rem;margin:32px 0 12px}
+.reader blockquote{margin:28px 0;padding:8px 24px;border-inline-start:4px solid var(--warm);font-size:1.2rem;font-weight:500}
+.takeaway{background:var(--tint);border-radius:12px;padding:16px 24px;margin-top:32px}
+.takeaway b{color:var(--accent)}
+
+/* videos */
+.band{background:var(--tint)}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:20px}
+.vid{text-decoration:none;display:flex;flex-direction:column;gap:12px;min-width:0}
+.thumb{aspect-ratio:16/9;max-width:100%;border-radius:12px;display:grid;place-items:center;position:relative;overflow:hidden;color:#fff}
+.thumb svg{width:56px;height:56px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.3));transition:transform .2s}
+.vid:hover .thumb svg{transform:scale(1.12)}
+.thumb span{position:absolute;inset-block-end:8px;inset-inline-start:8px;background:rgba(0,0,0,.6);padding:0 8px;border-radius:6px;font-size:.78rem}
+.t1{background:linear-gradient(135deg,#0E7C70,#0B3F4A)}
+.t2{background:linear-gradient(135deg,#C97A00,#7A2E12)}
+.t3{background:linear-gradient(135deg,#2D5B9A,#16264F)}
+.t4{background:linear-gradient(135deg,#5B7F2A,#1E3B1F)}
+.vid h3{font-size:1.05rem;font-weight:700;line-height:1.6}
+.vid p{margin:0;color:var(--muted);font-size:.88rem}
+
+/* podcast */
+.eps{display:grid;gap:12px}
+.ep{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 24px;text-decoration:none;min-width:0}
+.ep:hover{border-color:var(--accent)}
+.ep .no{font-family:var(--font-display);font-size:2rem;color:var(--warm);line-height:1;min-width:2.2rem;text-align:center}
+.ep h3{font-size:1.05rem}
+.ep p{margin:0;color:var(--muted);font-size:.88rem}
+.ep .go{display:flex;align-items:center;gap:12px;color:var(--accent);font-weight:700;font-size:.9rem;white-space:nowrap}
+.wave{display:flex;gap:3px;align-items:center;height:28px}
+.wave i{display:block;width:3px;background:var(--accent);border-radius:2px;opacity:.7}
+.note{font-size:.85rem;color:var(--muted);margin-top:16px}
+
+
+.head-cta{padding:2px 16px;font-size:.88rem;border-radius:99px}
+/* related */
+.rel{display:grid;gap:12px;margin-top:12px}
+.rel .card h3{font-size:1.05rem}
+.rel-h{margin-top:40px!important}
+/* monetization */
+.books{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:16px}
+.book{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 24px;display:flex;flex-direction:column;gap:8px;text-decoration:none;min-width:0}
+.book:hover{border-color:var(--accent)}
+.book b{font-size:1.05rem}
+.book span{color:var(--muted);font-size:.88rem}
+.book em{font-style:normal;color:var(--accent);font-weight:700;font-size:.9rem;margin-top:auto}
+.offer{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:var(--fg);color:var(--bg);border-radius:18px;padding:32px}
+.offer h2{font-family:var(--font-display);font-weight:400;font-size:2rem;margin-bottom:8px}
+.offer p{margin:0;opacity:.8;max-width:36em}
+.offer .cta{background:var(--warm);color:#1b1300;white-space:nowrap}
+.sponsor{border:1px dashed var(--line);border-radius:14px;padding:24px;display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+.sponsor h3{font-size:1.2rem}
+.sponsor p{margin:4px 0 0;color:var(--muted);font-size:.92rem}
+.disclose{font-size:.8rem;color:var(--muted);margin-top:16px}
+@media (max-width:760px){.offer{grid-template-columns:1fr}}
+
+
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:center;border-top:1px solid var(--line);padding-top:40px}
+.about h2{font-family:var(--font-display);font-weight:400;font-size:2rem;margin-bottom:8px}
+.about p{color:var(--muted);margin:0 0 12px;max-width:36em}
+.join{background:var(--tint);border-radius:16px;padding:24px;text-align:center}
+.join b{display:block;font-family:var(--font-display);font-weight:400;font-size:1.4rem;margin-bottom:4px}
+.join span{display:block;color:var(--muted);font-size:.9rem;margin-bottom:16px}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-block:32px 16px}
+  .hero svg{max-width:320px;margin-inline:auto}
+  .ep{grid-template-columns:auto 1fr}
+  .ep .go{grid-column:1/-1}
+  .nav a{padding:4px 8px}
+  .top .wrap{flex-wrap:wrap}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div dir="rtl" lang="fa">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" id="home-link"><i></i>بهتر از دیروز</a>
+    <nav class="nav" aria-label="بخش‌ها">
+      <a href="#articles" data-go>مقاله‌ها</a>
+      <a href="#videos" data-go>ویدئوها</a>
+      <a href="#podcast" data-go>پادکست</a>
+      <a href="#shop" data-go>کتاب‌ها</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="تغییر پوسته">تیره / روشن</button>
+  </div>
+</header>
+
+<main id="top">
+<div id="home">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1 class="display">رشد یعنی <em>یک گام کوچک</em> که امروز برمی‌داری</h1>
+        <p>«بهتر از دیروز» یک وبلاگ فارسی درباره عادت‌ها، تمرکز، هدف‌گذاری و ذهنیت رشد است. مقاله می‌خوانی، ویدئو می‌بینی و پادکست گوش می‌دهی، بعد یک کار کوچک را همین امروز شروع می‌کنی.</p>
+        <a class="cta" href="#articles" data-go>شروع با مقاله‌ها</a>
+        <a class="cta ghost" href="#podcast" data-go>گوش دادن به پادکست</a>
+        <div class="stats">
+          <span><b id="st-art">۹</b>مقاله کاربردی</span>
+          <span><b>۴</b>ویدئوی پیشنهادی</span>
+          <span><b>۴</b>قسمت پادکست</span>
+        </div>
+      </div>
+      <svg viewBox="0 0 320 300" role="img" aria-label="پله‌هایی که به یک قله می‌رسند">
+        <path d="M20 270H100V210H180V150H260V90H300" fill="none" stroke="var(--line)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 270H100V210H180V150" fill="none" stroke="var(--accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="180" cy="150" r="14" fill="var(--warm)"/>
+        <rect x="20" y="276" width="80" height="6" rx="3" fill="var(--accent)" opacity=".35"/>
+        <text x="30" y="250" font-family="Vazirmatn,Tahoma,sans-serif" font-size="13" fill="var(--muted)">روز ۱</text>
+        <text x="110" y="190" font-family="Vazirmatn,Tahoma,sans-serif" font-size="13" fill="var(--muted)">روز ۳۰</text>
+        <text x="190" y="130" font-family="Vazirmatn,Tahoma,sans-serif" font-size="13" fill="var(--accent)" font-weight="700">تو اینجایی</text>
+      </svg>
+    </div>
+  </div>
+
+  <section id="articles">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2>مقاله‌ها</h2><p>برای خواندن کامل، روی هر مقاله بزن.</p></div>
+        <div class="chips" id="chips" role="group" aria-label="فیلتر موضوع"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="videos" class="band">
+    <div class="wrap">
+      <div class="sec-head"><div><h2>ویدئوهای پیشنهادی</h2><p>چهار موضوع برای تماشا. هر کارت نتیجه جستجو را در یوتیوب باز می‌کند.</p></div></div>
+      <div class="vids">
+        <a class="vid" href="https://www.youtube.com/results?search_query=%D8%B9%D8%A7%D8%AF%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C+%D8%A7%D8%AA%D9%85%DB%8C+%D8%AC%DB%8C%D9%85%D8%B2+%DA%A9%D9%84%DB%8C%D8%B1" target="_blank" rel="noopener">
+          <div class="thumb t1"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(255,255,255,.2)"/><path d="M23 18l17 10-17 10z" fill="#fff"/></svg><span>عادت‌ها</span></div>
+          <h3>عادت‌های اتمی: ساختن عادت با تغییرهای کوچک</h3>
+          <p>چگونه هویت و سیستم، عادت‌ها را می‌سازند.</p>
+        </a>
+        <a class="vid" href="https://www.youtube.com/results?search_query=deep+work+cal+newport+focus" target="_blank" rel="noopener">
+          <div class="thumb t2"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(255,255,255,.2)"/><path d="M23 18l17 10-17 10z" fill="#fff"/></svg><span>تمرکز</span></div>
+          <h3>کار عمیق: چگونه بدون حواس‌پرتی کار کنیم</h3>
+          <p>روش‌های عملی برای ساعت‌های متمرکز.</p>
+        </a>
+        <a class="vid" href="https://www.youtube.com/results?search_query=growth+mindset+carol+dweck" target="_blank" rel="noopener">
+          <div class="thumb t3"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(255,255,255,.2)"/><path d="M23 18l17 10-17 10z" fill="#fff"/></svg><span>ذهنیت</span></div>
+          <h3>ذهنیت رشد در برابر ذهنیت ثابت</h3>
+          <p>نگاه کارول دوک به یادگیری و شکست.</p>
+        </a>
+        <a class="vid" href="https://www.youtube.com/results?search_query=how+to+stop+procrastinating+tim+urban" target="_blank" rel="noopener">
+          <div class="thumb t4"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(255,255,255,.2)"/><path d="M23 18l17 10-17 10z" fill="#fff"/></svg><span>اهمال‌کاری</span></div>
+          <h3>چرا کارها را عقب می‌اندازیم؟</h3>
+          <p>نگاهی ساده به ذهن اهمال‌کار.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="podcast">
+    <div class="wrap">
+      <div class="sec-head"><div><h2>پادکست‌های پیشنهادی</h2><p>چهار موضوع برای گوش دادن در مسیر کار یا پیاده‌روی. هر کارت نتیجه جستجو را در اسپاتیفای باز می‌کند.</p></div></div>
+      <div class="eps" id="eps"></div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <div class="wrap">
+      <div class="sec-head"><div><h2>کتاب‌های پیشنهادی</h2><p>کتاب‌هایی که ایده‌هایشان در مقاله‌های این وبلاگ آمده است.</p></div></div>
+      <div class="books" id="books"></div>
+      <p class="disclose" id="disclose" hidden>با خرید از پیوندهای این بخش، بدون هزینه اضافه برای شما، ممکن است کمیسیونی به وبلاگ برسد.</p>
+    </div>
+  </section>
+
+  <section id="offer-sec" hidden>
+    <div class="wrap">
+      <div class="offer">
+        <div>
+          <h2 id="offer-title">راهنمای ۳۰ روزه رشد</h2>
+          <p id="offer-text">برنامه گام‌به‌گام برای ساختن سه عادت ماندگار، همراه با جدول پیگیری روزانه و مرور هفتگی.</p>
+        </div>
+        <a class="cta" id="offer-link" href="#" target="_blank" rel="noopener">دریافت راهنما</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsor-sec" hidden>
+    <div class="wrap">
+      <div class="sponsor">
+        <div>
+          <h3>همکاری و تبلیغات</h3>
+          <p>اگر محصول یا خدمتی دارید که به رشد فردی مربوط است، برای معرفی در مقاله، ویدئو یا پادکست پیام بدهید.</p>
+        </div>
+        <a class="cta" id="sponsor-link" href="#" target="_blank" rel="noopener">ارتباط برای همکاری</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <h2>درباره بهتر از دیروز</h2>
+          <p>این وبلاگ برای کسانی است که می‌خواهند بدون شعار و وعده‌های بزرگ، قدم به قدم بهتر شوند. مقاله‌ها کوتاه و کاربردی هستند و هر کدام با یک «قدم برای امروز» تمام می‌شوند.</p>
+          <p>اگر موضوعی دوست داری بنویسیم، پیشنهادت را برایمان بفرست.</p>
+        </div>
+        <div class="join" id="join" hidden>
+          <b>هر هفته یک گام کوچک</b>
+          <span>خلاصه مقاله‌ها و تمرین‌ها را در کانال دنبال کن.</span>
+          <a class="cta" id="join-link" href="#" target="_blank" rel="noopener">عضویت در کانال</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="reader-view" hidden>
+  <div class="wrap"><article class="reader" id="reader"></article></div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>بهتر از دیروز، وبلاگ رشد فردی</span>
+    <span>هر روز، یک گام کوچک</span>
+  </div>
+</footer>
+</div>
+
+<script>
+/* فونت‌ها بعد از نمایش صفحه بارگذاری می‌شوند تا اگر دسترسی به گوگل فونت محدود بود، صفحه معطل نماند */
+(function(){try{var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;700&display=swap';document.head.appendChild(l)}catch(e){}})();
+var ARTICLES=[
+{id:'build-habit',cat:'عادت‌ها',min:'۶',title:'چطور یک عادت جدید بسازیم که بیشتر از یک هفته دوام بیاورد',lead:'بیشتر عادت‌ها نه به‌خاطر کم‌اراده بودن، بلکه به‌خاطر طراحی بد شکست می‌خورند. با چهار تغییر ساده می‌شود جلوی این شکست را گرفت.',
+ body:[['p','هر سال ژانویه یا هر شنبه صبح، خیلی‌ها تصمیم می‌گیرند زندگی‌شان را عوض کنند. چند روز اول همه‌چیز خوب است و بعد، یک روز شلوغ یا یک شب بدخواب، همه را به هم می‌زند. اگر این الگو برایت آشناست، مشکل از تو نیست. مشکل از شکل برنامه است.'],['h','۱. عادت را کوچک کن'],['p','عادتی که برای شروعش به انرژی زیاد نیاز دارد، در روز خسته از بین می‌رود. به‌جای «هر روز یک ساعت ورزش»، بنویس «هر روز پنج دقیقه حرکت». هدف اول این است که عادت هر روز اتفاق بیفتد، نه اینکه بزرگ باشد.'],['h','۲. به یک نشانه وصلش کن'],['p','مغز برای شروع یک کار به یک علامت نیاز دارد. عادت جدید را به کاری که همین حالا هر روز انجام می‌دهی بچسبان: «بعد از اینکه چای ریختم، دو صفحه می‌خوانم». چای نشانه است و خواندن واکنش.'],['q','عادت‌ها با انگیزه شروع نمی‌شوند. با یک نشانه شروع می‌شوند.'],['h','۳. محیط را آماده کن'],['p','کتاب را کنار چای بگذار، کفش ورزشی را کنار در، بطری آب را روی میز. هر مانعی که از سر راه کار درست برداری، احتمال انجامش بالا می‌رود. برعکس، برای عادتی که می‌خواهی ترک کنی، مانع بساز.'],['h','۴. فقط پیگیری کن، قضاوت نکن'],['p','یک تقویم دیواری بگیر و هر روز انجام عادت را با یک ضربدر علامت بزن. دیدن زنجیره‌ای که بلند می‌شود، خودش انگیزه می‌دهد. اگر یک روز جا ماند، قانون ساده است: روز بعد حتماً برگرد. جا ماندن یک روز شکست نیست، جا ماندن دو روز پشت سر هم شروع الگوی تازه است.'],['t','یک عادت انتخاب کن، آن را به نسخه پنج دقیقه‌ای تبدیل کن و به یک کار ثابت روزانه‌ات وصل کن. از فردا هفت روز علامت بزن.']]},
+{id:'morning',cat:'عادت‌ها',min:'۵',title:'روتین صبح ساده برای شروع بهتر روز',lead:'یک روتین صبح خوب لازم نیست ساعت پنج بیدار شدن و ده کار پشت سر هم باشد. سه کار کوتاه که هر روز تکرار شود، کافی است.',
+ body:[['p','در شبکه‌های اجتماعی روتین‌های صبحگاهی طولانی زیاد دیده می‌شود: مدیتیشن، ورزش، ژورنال‌نویسی، آب لیمو و مطالعه، همه پیش از ساعت هفت. برای بیشتر آدم‌ها این برنامه دوام ندارد، چون به شرایط ایده‌آل وابسته است.'],['h','اصل کار: کم، ولی هر روز'],['p','روتینی که هر روز ده دقیقه طول بکشد و واقعاً انجام شود، از روتین یک ساعته‌ای که هفته‌ای یک بار اتفاق می‌افتد بهتر است. مقیاس را به اندازه روز بدترین حالت‌ات بگیر، نه بهترین حالت.'],['h','سه کار پیشنهادی'],['p','اول، بدن را بیدار کن: یک لیوان آب و پنج دقیقه حرکت یا کشش. دوم، ذهن را مرتب کن: یک دقیقه بنویس امروز مهم‌ترین کار چیست. سوم، قبل از نگاه کردن به گوشی، یک کار برای خودت انجام بده: دو صفحه کتاب، یا چند نفس عمیق.'],['q','اولین ده دقیقه روز را برای خودت نگه دار، پیش از آنکه دیگران آن را بردارند.'],['h','چند نکته اجرایی'],['p','شب قبل لباس و وسایل را آماده کن. زمان بیدار شدن را به‌تدریج و ده دقیقه ده دقیقه جلو ببر، نه یک‌دفعه. گوشی را دور از تخت بگذار تا مجبور شوی بلند شوی. و اگر شبی دیر خوابیدی، نسخه کوتاه روتین را انجام بده، ولی کامل رهایش نکن.'],['t','فردا صبح فقط یک کار را امتحان کن: مهم‌ترین کار روز را در یک جمله بنویس، قبل از باز کردن گوشی.']]},
+{id:'tiny-habits',cat:'عادت‌ها',min:'۵',title:'عادت‌های کوچکی که زندگی را عوض می‌کنند',lead:'تغییر بزرگ معمولاً از تکرار کارهای خیلی کوچک می‌آید. پنج عادت که کمتر از پنج دقیقه زمان می‌برند و اثرشان در طول ماه‌ها دیده می‌شود.'
+ ,body:[['p','وقتی می‌خواهیم زندگی‌مان را بهتر کنیم، سراغ تغییرهای بزرگ می‌رویم و زود خسته می‌شویم. اما اگر هر روز فقط یک درصد بهتر شوی، بعد از یک سال تفاوت چشمگیر است. این عادت‌ها همان یک درصد هستند.'],['h','۱. نوشتن سه خط شب'],['p','قبل از خواب سه خط بنویس: چه چیزی خوب بود، چه چیزی یاد گرفتم، فردا چه کار مهمی دارم. این کار ذهن را آرام می‌کند و برنامه فردا را روشن.'],['h','۲. یک لیوان آب بعد از بیدار شدن'],['p','ساده‌ترین عادت سلامت است و نشانه‌ای می‌شود برای شروع روز. هزینه‌ای ندارد و پنج ثانیه طول می‌کشد.'],['h','۳. ده دقیقه پیاده‌روی بعد از غذا'],['p','حرکت سبک بعد از غذا به هضم، انرژی و تمرکز کمک می‌کند. اگر وقت کم است، همین ده دقیقه کافی است.'],['h','۴. یک صفحه مطالعه'],['p','یک صفحه در روز یعنی حدود ده تا پانزده کتاب در سال. معمولاً بعد از خواندن اولین صفحه، ادامه می‌دهی. اگر ندادی، همان یک صفحه هم ارزش داشت.'],['h','۵. گوشی دور از تخت'],['p','این عادت، یک ساعت به خواب و تمرکز روز بعد اضافه می‌کند. از یک شارژر اتاق بغلی یا روی میز استفاده کن.'],['q','تو به سطح اهدافت نمی‌رسی. به سطح عادت‌هایت می‌رسی.'],['t','از این پنج عادت فقط یکی را انتخاب کن و تا آخر هفته هر روز انجام بده. بعد سراغ دومی برو.']]},
+{id:'procrastination',cat:'بهره‌وری',min:'۶',title:'چرا کارها را عقب می‌اندازیم؟ پنج راه عملی برای رهایی از اهمال‌کاری',lead:'اهمال‌کاری معمولاً نشانه تنبلی نیست. بیشتر وقت‌ها راهی است که ذهن برای فرار از یک حس ناخوشایند پیدا می‌کند. وقتی این را بفهمی، راه‌حل‌ها ساده‌تر می‌شوند.',
+ body:[['p','کاری را که باید انجام بدهی می‌دانی. زمان دارد تمام می‌شود و باز هم سراغ گوشی می‌روی، اتاق را مرتب می‌کنی یا یک کار کم‌اهمیت‌تر را شروع می‌کنی. بعد هم از خودت بدت می‌آید. این چرخه برای تقریباً همه آشناست.'],['h','ریشه اهمال‌کاری'],['p','پژوهش‌های روان‌شناسی نشان داده‌اند اهمال‌کاری بیشتر به مدیریت احساس مربوط است تا مدیریت زمان. کاری که ما را می‌ترساند، خسته می‌کند، گیج می‌کند یا حس ناکافی بودن می‌دهد، ذهن را به سمت فرار هل می‌دهد. فرار در لحظه حس بهتری می‌دهد، اما مشکل را بزرگ‌تر می‌کند.'],['h','۱. کار را کوچک کن'],['p','به‌جای «گزارش را بنویس» بگو «فقط عنوان و سه سرفصل را بنویس». کار کوچک ترس را کم می‌کند و شروع را آسان می‌کند.'],['h','۲. پنج دقیقه شروع کن'],['p','به خودت قول بده فقط پنج دقیقه کار کنی و اگر دلت نخواست، رها کنی. بیشتر اوقات بعد از شروع، ادامه دادن راحت‌تر از شروع کردن است.'],['h','۳. بفهم چه چیزی را نمی‌خواهی حس کنی'],['p','قبل از شروع بپرس: چه چیز این کار برایم ناخوشایند است؟ ترس از بد شدن؟ نامشخص بودن مرحله اول؟ وقتی اسمش را بگذاری، می‌توانی برای همان بخش برنامه بریزی، مثلاً با پرسیدن از یک همکار یا نوشتن یک پیش‌نویس بد.'],['q','پیش‌نویس بد، از صفحه خالی بهتر است.'],['h','۴. مانع‌ها را بردار'],['p','گوشی را در اتاق دیگر بگذار، تب‌های اضافی را ببند، وسایل کار را از شب قبل آماده کن. هر چه فاصله تا شروع کمتر باشد، اهمال‌کاری کمتر می‌شود.'],['h','۵. با خودت مهربان باش'],['p','سرزنش کردن خودت معمولاً اهمال‌کاری را بیشتر می‌کند، چون حس بدتری ایجاد می‌کند و ذهن دوباره به فرار پناه می‌برد. اگر عقب انداختی، بدون قضاوت دوباره شروع کن.'],['t','کاری را که این هفته عقب انداخته‌ای انتخاب کن، آن را به یک قدم پنج‌دقیقه‌ای تبدیل کن و همین حالا شروع کن.']]},
+{id:'focus',cat:'تمرکز',min:'۶',title:'چطور در دنیای پر از اعلان تمرکز کنیم',lead:'تمرکز یک ویژگی ذاتی نیست که یا داشته باشی یا نداشته باشی. مهارتی است که با چند تغییر ساده در محیط و عادت‌ها قوی‌تر می‌شود.',
+ body:[['p','هر اعلان فقط چند ثانیه وقت می‌گیرد، ولی برگشتن ذهن به کار قبلی بیشتر طول می‌کشد. اگر روزی ده‌ها بار قطع شوی، هیچ‌وقت وارد حالت تمرکز عمیق نمی‌شوی. خبر خوب این است که بیشتر این قطع‌شدن‌ها قابل کنترل هستند.'],['h','محیط را طراحی کن'],['p','اعلان‌های غیرضروری را خاموش کن و فقط تماس و پیام‌های مهم را باز بگذار. هنگام کار، گوشی را در حالت پرواز یا در اتاق دیگر بگذار. تعداد تب‌های باز را کم کن و فقط چیزی را باز نگه دار که به کار فعلی ربط دارد.'],['h','بازه‌های بدون قطع بساز'],['p','برای کار مهم یک بازه ۴۵ تا ۹۰ دقیقه‌ای تعیین کن و به همه بگو در آن زمان در دسترس نیستی. پیام‌ها و ایمیل‌ها را در دو یا سه زمان مشخص روز بررسی کن، نه هر چند دقیقه.'],['q','تمرکز یعنی چیزهای دیگر را نگفتن، نه فقط یک کار را گفتن.'],['h','یک کار در هر زمان'],['p','چندکاره بودن حس بهره‌وری می‌دهد، اما معمولاً سرعت و کیفیت را کم می‌کند. هر بار فقط یک کار را باز بگذار. اگر فکر دیگری آمد، آن را روی یک کاغذ بنویس و به کارت برگرد.'],['h','به ذهن استراحت بده'],['p','بعد از هر بازه تمرکز، چند دقیقه از صفحه نمایش دور شو: راه برو، آب بخور، از پنجره بیرون را نگاه کن. استراحت درست، تمرکز بازه بعد را بهتر می‌کند.'],['t','فردا یک بازه ۴۵ دقیقه‌ای انتخاب کن، گوشی را در اتاق دیگر بگذار و فقط یک کار مهم را انجام بده.']]},
+{id:'pomodoro',cat:'تمرکز',min:'۵',title:'تکنیک پومودورو: راهنمای کامل برای شروع',lead:'پومودورو یکی از ساده‌ترین روش‌های مدیریت زمان است: بیست‌وپنج دقیقه کار و پنج دقیقه استراحت. در این راهنما یاد می‌گیری چطور از آن درست استفاده کنی.',
+ body:[['p','تکنیک پومودورو را فرانچسکو چیریلو در دهه ۱۹۸۰ ابداع کرد. نام آن از تایمر آشپزخانه‌ای گوجه‌فرنگی‌شکل گرفته شده که او با آن کار می‌کرد. ایده ساده است: کار را به بازه‌های کوتاه تقسیم کن و بعد از هر بازه استراحت کن.'],['h','مراحل اجرا'],['p','۱. یک کار مشخص انتخاب کن. ۲. تایمر را روی ۲۵ دقیقه بگذار. ۳. تا صدای تایمر فقط روی همان کار کار کن. ۴. پنج دقیقه استراحت کن. ۵. بعد از چهار دوره، یک استراحت بلندتر، حدود ۱۵ تا ۳۰ دقیقه، داشته باش.'],['h','چرا جواب می‌دهد'],['p','بازه‌های کوتاه شروع را آسان می‌کنند، چون «فقط ۲۵ دقیقه» ترسناک نیست. تایمر هم حس فوریت می‌سازد و مرز روشنی بین کار و استراحت می‌گذارد.'],['q','هدف این نیست که ۲۵ دقیقه کامل کار کنی. هدف این است که شروع کنی.'],['h','اشتباه‌های رایج'],['p','استراحت را با گوشی پر نکن، چون ذهن واقعاً استراحت نمی‌کند. اگر وسط دوره حواست پرت شد، یک خط یادداشت کن و برگرد. اگر ۲۵ دقیقه برایت کوتاه یا بلند است، آن را به ۵۰ و ۱۰ یا ۱۵ و ۵ تغییر بده. تکنیک برای تو است، نه تو برای تکنیک.'],['t','یک دوره ۲۵ دقیقه‌ای برای مهم‌ترین کار امروز تنظیم کن و بعد از آن پنج دقیقه راه برو.']]},
+{id:'growth-mindset',cat:'ذهنیت',min:'۶',title:'ذهنیت رشد چیست و چطور آن را تمرین کنیم؟',lead:'ذهنیت رشد یعنی باور به اینکه توانایی‌ها با تمرین، راهبرد خوب و بازخورد بهتر می‌شوند. این باور راهی است برای نگاه کردن به چالش‌ها، نه ضمانت موفقیت.',
+ body:[['p','روان‌شناس آمریکایی، کارول دوک، دو نگرش را از هم جدا کرد. در ذهنیت ثابت، آدم فکر می‌کند استعداد و هوش چیزهایی هستند که یا داری یا نداری. در ذهنیت رشد، آدم باور دارد این ویژگی‌ها با تلاش و یادگیری قابل پیشرفت هستند.'],['h','تفاوت در رفتار روزمره'],['p','کسی که ذهنیت ثابت دارد از چالش دوری می‌کند تا ضعفش دیده نشود. کسی که ذهنیت رشد دارد چالش را فرصت یادگیری می‌بیند. اولی نقد را تهدید می‌داند و دومی اطلاعات.'],['h','چطور تمرینش کنیم'],['p','جمله «نمی‌توانم» را به «هنوز نمی‌توانم» تغییر بده. به‌جای «من در ریاضی خوب نیستم» بگو «هنوز راه مناسب یادگیری‌اش را پیدا نکرده‌ام». روی فرایند تمرکز کن، نه فقط نتیجه: چه تلاشی کردم، چه راهبردی جواب داد. و وقتی نقدی شنیدی، بپرس: چه چیزی از این یاد بگیرم؟'],['q','هنوز، یکی از قدرتمندترین کلمه‌های زبان است.'],['h','یک نکته صادقانه'],['p','ذهنیت رشد جادو نیست. پژوهشگران درباره اندازه اثرش در آموزش و محیط‌های مختلف بحث دارند. تلاش بدون راهبرد و بدون حمایت کافی نیست. بهترین نتیجه وقتی است که باور رشد، تمرین هدفمند و بازخورد باهم باشند.'],['t','یک «نمی‌توانم» که این هفته به خودت گفته‌ای بنویس و آن را به یک «هنوز» و یک قدم عملی تبدیل کن.']]},
+{id:'confidence',cat:'ذهنیت',min:'۶',title:'اعتمادبه‌نفس چگونه ساخته می‌شود؟ هفت تمرین روزانه',lead:'اعتمادبه‌نفس قبل از عمل نمی‌آید. بیشتر وقت‌ها نتیجه عمل‌های کوچک و تکراری است که به خودت ثابت می‌کند می‌توانی.',
+ body:[['p','خیلی‌ها منتظرند اعتمادبه‌نفس بیاید تا شروع کنند. اما معمولاً ترتیب برعکس است: کار می‌کنی، ناکامل و با ترس، و بعد اعتماد می‌سازی. این هفت تمرین به همین کار می‌آیند.'],['p','۱. هر روز یک قول کوچک به خودت بده و انجامش بده. هر وفای کوچک، اعتماد به خودت را بالا می‌برد.'],['p','۲. هر شب سه کار انجام‌شده را بنویس. ذهن به‌طور طبیعی به کمبودها توجه می‌کند و این کار تعادل می‌دهد.'],['p','۳. هر هفته یک کار کمی ترسناک انجام بده، مثل صحبت در جمع یا پرسیدن یک سؤال. هدف رد شدن از ترس نیست، تمرین کردن در کنارش است.'],['p','۴. با خودت مثل یک دوست صحبت کن. اگر به دوستت آن جمله را نمی‌گفتی، به خودت هم نگو.'],['p','۵. مهارت‌های جدید یاد بگیر. تسلط واقعی، واقعی‌ترین منبع اعتماد است.'],['p','۶. از نظر بدنی مراقب خودت باش. خواب، حرکت و غذای خوب مستقیم روی حال و اعتماد تو اثر دارند.'],['p','۷. خودت را با دیگران مقایسه نکن. با خودت چند ماه پیش مقایسه کن.'],['q','اعتمادبه‌نفس یعنی باور به اینکه می‌توانی از پس خودت برآیی، نه اینکه هیچ‌وقت اشتباه نمی‌کنی.'],['t','امشب سه کاری را که امروز انجام دادی بنویس، حتی اگر خیلی کوچک باشند.']]},
+{id:'ten-principles',cat:'بازتاب',min:'۷',title:'ده اصل ساده رشد فردی که هر روز به کار می‌آیند',lead:'خلاصه آنچه در این وبلاگ می‌خوانی: ده اصل کوتاه که می‌توانی بنویسی، روی دیوار بزنی و هر هفته به آن برگردی.',
+ body:[['p','رشد فردی با کتاب‌های قطور و دوره‌های گران شروع نمی‌شود. با چند اصل ساده شروع می‌شود که هر روز تکرار شوند. این ده اصل را مرور کن.'],['p','۱. کوچک شروع کن. شروع کوچک، شروعی است که واقعاً اتفاق می‌افتد.'],['p','۲. به یک نشانه وصلش کن. عادت جدید را به کاری که همین الان می‌کنی بچسبان.'],['p','۳. محیط را طراحی کن. کار درست را آسان و کار نادرست را سخت کن.'],['p','۴. روی سیستم تمرکز کن، نه فقط هدف. هدف جهت می‌دهد، سیستم حرکت.'],['p','۵. انرژی را مدیریت کن. مهم‌ترین کار را در ساعت‌های اوج انجام بده.'],['p','۶. یک کار در هر زمان. تمرکز عمیق ارزش بیشتری از چندکاره بودن دارد.'],['p','۷. با شکست مثل داده رفتار کن. بپرس چه چیزی را دفعه بعد تغییر بدهم.'],['p','۸. «هنوز» را یاد بگیر. توانایی‌ها با تمرین رشد می‌کنند.'],['p','۹. هر هفته مرور کن. ده دقیقه مرور، مسیر هفته بعد را روشن می‌کند.'],['p','۱۰. با خودت مهربان باش. سرزنش، شروع دوباره را سخت‌تر می‌کند.'],['q','پیشرفت یک خط راست نیست. مهم این است که بعد از هر افتادن، دوباره برگردی.'],['t','از این ده اصل فقط یکی را انتخاب کن و تا آخر هفته هر روز تمرینش کن.']]},
+{id:'two-min',cat:'عادت‌ها',min:'۵',title:'قانون دو دقیقه: شروع کوچک، عادت بزرگ',lead:'سخت‌ترین بخش هر عادت، شروع آن است. اگر شروع را آن‌قدر کوچک کنی که نشود بهانه آورد، بقیه راه آسان‌تر می‌شود.',
+ body:[['p','بیشتر ما عادت جدید را با یک برنامه بزرگ شروع می‌کنیم: «هر روز یک ساعت ورزش»، «هر شب بیست صفحه کتاب». چند روز اول با انرژی جلو می‌رویم و بعد اولین روز شلوغ، زنجیره را پاره می‌کند.'],['h','نسخه دو دقیقه‌ای'],['p','قانون دو دقیقه می‌گوید هر عادت را به نسخه‌ای تبدیل کن که کمتر از دو دقیقه طول بکشد. «کتاب بخوان» می‌شود «یک صفحه بخوان». «ورزش کن» می‌شود «لباس ورزشی را بپوش». هدف این نیست که همیشه همان‌قدر انجام بدهی. هدف این است که شروع کردن به یک تصمیم بی‌دردسر تبدیل شود.'],['q','مهم نیست امروز چقدر انجام می‌دهی. مهم این است که امروز هم کسی باشی که انجام می‌دهد.'],['h','چرا جواب می‌دهد'],['p','وقتی شروع کوچک است، مغز مقاومتی نشان نمی‌دهد. بعد از شروع هم معمولاً ادامه می‌دهی، چون جلو رفتن از نقطه صفر آسان‌تر از شروع از هیچ است. با گذشت هفته‌ها، همان نسخه کوچک را کم‌کم بزرگ می‌کنی.'],['t','یک عادتی را که مدام به تعویق می‌اندازی انتخاب کن و آن را به نسخه دو دقیقه‌ای‌اش تبدیل کن. از امشب شروع کن.']]},
+{id:'motivation',cat:'ذهنیت',min:'۴',title:'چرا انگیزه کافی نیست؟',lead:'انگیزه مثل هوا بالا و پایین می‌شود. کسی که به آن تکیه کند، همان روزهایی را از دست می‌دهد که بیشترین اثر را دارند.',
+ body:[['p','انگیزه حس خوبی است، ولی قابل اعتماد نیست. بعد از یک ویدئوی الهام‌بخش یا یک شروع تازه بالا می‌رود و با اولین خستگی پایین می‌آید. اگر برنامه‌ات به آن وابسته باشد، فقط در روزهای خوب پیش می‌رود.'],['h','انضباط یعنی طراحی محیط'],['p','آدم‌هایی که پایدار هستند معمولاً اراده بیشتری ندارند. آن‌ها مسیر را ساده کرده‌اند: کتاب روی بالش، کفش کنار در، گوشی در اتاق دیگر. وقتی کار درست آسان و کار نادرست سخت باشد، به انگیزه کمتری نیاز داری.'],['q','انگیزه تو را شروع می‌دهد. سیستم تو را ادامه می‌دهد.'],['h','چه کار کنیم؟'],['p','برای هر هدف یک زمان و یک مکان مشخص تعیین کن. مثلاً «بعد از قهوه صبح، سر میز، ده دقیقه بنویس». این جمله تصمیم‌گیری را حذف می‌کند و انگیزه را از معادله بیرون می‌برد.'],['t','هدفی را که این هفته دنبالش هستی در قالب «بعد از ... در ... انجام می‌دهم ...» بنویس.']]},
+{id:'energy',cat:'بهره‌وری',min:'۵',title:'مدیریت انرژی به‌جای مدیریت زمان',lead:'همه ما روزی ۲۴ ساعت داریم، ولی همه ساعت‌ها ارزش یکسانی ندارند. کار مهم را باید در ساعتی گذاشت که ذهن آماده است.',
+ body:[['p','وقتی برنامه‌ات پر است اما شب احساس می‌کنی کار مهمی نکرده‌ای، مشکل معمولاً زمان نیست. مشکل این است که کار سنگین را در ساعتی گذاشته‌ای که انرژی نداشتی.'],['h','ساعت‌های اوج را پیدا کن'],['p','یک هفته، هر دو ساعت یک بار، تمرکز خودت را از یک تا پنج نمره بده. الگو سریع پیدا می‌شود. بیشتر آدم‌ها یک یا دو بازه پرانرژی در روز دارند. همان بازه‌ها را برای نوشتن، تصمیم‌های بزرگ و یادگیری نگه دار.'],['h','کارهای سبک را جدا کن'],['p','ایمیل، پیام‌ها و کارهای اداری را در ساعت‌های کم‌انرژی بگذار. این کارها به تمرکز عمیق نیاز ندارند و در آن بازه‌ها هم از دست نمی‌روند.'],['q','بهترین ساعت‌هایت را به مهم‌ترین کارت بده، نه به صندوق ورودی.'],['t','فردا اولین بازه پرانرژی‌ات را حدس بزن و آن را فقط به یک کار مهم اختصاص بده.']]},
+{id:'goals',cat:'هدف',min:'۶',title:'هدف‌گذاری با سیستم، نه با آرزو',lead:'هدف می‌گوید به کجا می‌خواهی برسی. سیستم می‌گوید هر روز چه کار می‌کنی. بدون دومی، اولی فقط یک آرزو است.',
+ body:[['p','«امسال ده کیلو وزن کم می‌کنم» هدف است. اما روز سه‌شنبه ساعت شش عصر چه کاری باید انجام بدهی؟ هدف به این سؤال جواب نمی‌دهد و همین باعث می‌شود بیشتر هدف‌ها روی کاغذ بمانند.'],['h','هدف را به رفتار تبدیل کن'],['p','از خودت بپرس: کدام رفتار تکرارشونده من را به این نتیجه می‌رساند؟ برای کاهش وزن ممکن است جواب این باشد: «هر روز بعد از شام بیست دقیقه راه بروم». نتیجه را کنترل نمی‌کنی، رفتار را می‌کنی.'],['h','پیشرفت را اندازه بگیر'],['p','یک جدول ساده بساز و هر روز انجام عادت را علامت بزن. مهم‌ترین شاخص، تعداد روزهای انجام‌شده است. اگر یک روز جا ماند، قانون ساده است: هیچ‌وقت دو روز پشت سر هم جا نینداز.'],['q','به سطح اهدافت نمی‌رسی. به سطح سیستمت می‌رسی.'],['t','یک هدف مهم را انتخاب کن و یک رفتار روزانه‌ای که آن را جلو می‌برد بنویس.']]},
+{id:'review',cat:'بازتاب',min:'۴',title:'پنج سؤال برای مرور هفتگی',lead:'ده دقیقه مرور در پایان هفته، مسیر هفته بعد را روشن می‌کند و از تکرار اشتباه‌های قبلی جلوگیری می‌کند.',
+ body:[['p','بدون مرور، هفته‌ها پشت سر هم می‌گذرند و نمی‌دانیم چه چیزی کار کرده است. یک جلسه کوتاه با خودت، جمعه عصر یا شنبه صبح، کافی است.'],['h','سؤال‌ها'],['p','۱. این هفته چه چیزی خوب پیش رفت؟ ۲. چه چیزی انرژی‌ام را گرفت؟ ۳. از چه چیزی چیزی یاد گرفتم؟ ۴. مهم‌ترین کار هفته آینده چیست؟ ۵. برای انجام آن چه مانعی دارم و چطور برطرفش کنم؟'],['p','جواب‌ها را در یک دفترچه بنویس. بعد از چند هفته، با خواندن پاسخ‌های قبلی الگوهای تکراری را می‌بینی و تصمیم‌هایت بهتر می‌شود.'],['t','یک یادآور هفتگی بگذار و همین پنج سؤال را اولین بار همین آخر هفته جواب بده.']]},
+{id:'failure',cat:'ذهنیت',min:'۵',title:'شکست را چطور بخوانیم',lead:'شکست درباره ارزش تو حرفی نمی‌زند. درباره روش تو اطلاعات می‌دهد و اگر بخوانی‌اش، به کارت می‌آید.',
+ body:[['p','بعد از یک شکست، ذهن زود حکم صادر می‌کند: «من استعدادش را ندارم». این حکم احساس را توضیح می‌دهد، اما هیچ راهی برای اقدام بعدی نشان نمی‌دهد.'],['h','از قضاوت به پرسش'],['p','به‌جای «چرا من؟» بپرس: «چه چیزی را می‌توانم دفعه بعد متفاوت انجام بدهم؟». این پرسش شکست را به داده تبدیل می‌کند. شاید زمان‌بندی اشتباه بوده، شاید مهارتی کم بوده، شاید تلاش درست جای اشتباهی صرف شده.'],['q','شکست پایان آزمایش نیست. نتیجه آزمایش است.'],['h','کوچک شکست بخور'],['p','برای اینکه از شکست نترسی، آزمایش‌های کوچک‌تر طراحی کن. پروژه‌ای که هزینه‌اش کم است، اشتباهش هم کم‌هزینه است و سریع‌تر درس می‌دهد.'],['t','به آخرین کاری که خوب پیش نرفت فکر کن و یک چیز مشخص بنویس که دفعه بعد تغییر می‌دهی.']]}
+];
+var EPS=[
+ ['♪','شروع کردن و غلبه بر مقاومت','عادت‌های کوچک و ساختن شتاب اولیه','عادت+شروع+کوچک+پادکست+فارسی'],
+ ['♪','تمرکز در دنیای پر از اعلان','چگونه توجهمان را پس بگیریم','تمرکز+حواس+پرتی+پادکست+فارسی'],
+ ['♪','اهمال‌کاری و ذهن ما','دلیل عقب انداختن کارها و راه‌های عملی','اهمال+کاری+پادکست+فارسی'],
+ ['♪','مرور هفتگی و برنامه‌ریزی ساده','یک روتین ده‌دقیقه‌ای برای هفته بهتر','برنامه+ریزی+هفتگی+پادکست+فارسی']
+];
+function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+var current='همه';
+var grid=document.getElementById('grid'),chips=document.getElementById('chips');
+function renderChips(){
+  chips.innerHTML='';
+  var cats=['همه'];ARTICLES.forEach(function(a){if(cats.indexOf(a.cat)<0)cats.push(a.cat)});
+  cats.forEach(function(c){
+    var b=el('button','chip',c);b.type='button';b.setAttribute('aria-pressed',String(c===current));
+    b.onclick=function(){current=c;renderChips();renderGrid()};chips.appendChild(b);
+  });
+}
+function renderGrid(){
+  grid.innerHTML='';
+  var list=ARTICLES.filter(function(a){return current==='همه'||a.cat===current});
+  list.forEach(function(a,i){
+    var b=el('button','card'+(i===0&&current==='همه'?' feature':''));b.type='button';
+    var m=el('div','meta');m.appendChild(el('span','tag',a.cat));m.appendChild(el('span',null,a.min+' دقیقه مطالعه'));
+    b.appendChild(m);b.appendChild(el('h3',null,a.title));b.appendChild(el('p',null,a.lead));
+    b.onclick=function(){openArticle(a)};grid.appendChild(b);
+  });
+}
+function renderEps(){
+  var box=document.getElementById('eps');
+  EPS.forEach(function(e){
+    var a=el('a','ep');a.href='https://open.spotify.com/search/'+e[3];a.target='_blank';a.rel='noopener';
+    a.appendChild(el('div','no',e[0]));
+    var mid=el('div');mid.appendChild(el('h3',null,e[1]));mid.appendChild(el('p',null,e[2]));a.appendChild(mid);
+    var go=el('div','go');var w=el('span','wave');
+    [10,20,14,26,18,28,12,22,16].forEach(function(h){var i=document.createElement('i');i.style.height=h+'px';w.appendChild(i)});
+    go.appendChild(w);go.appendChild(el('span',null,'جستجو در اسپاتیفای'));a.appendChild(go);box.appendChild(a);
+  });
+}
+var home=document.getElementById('home'),rv=document.getElementById('reader-view'),rd=document.getElementById('reader');
+function openArticle(a){
+  rd.innerHTML='';
+  var back=el('button','back','← بازگشت به مقاله‌ها');back.type='button';back.onclick=closeArticle;rd.appendChild(back);
+  var m=el('div','meta');m.appendChild(el('span','tag',a.cat));m.appendChild(el('span',null,a.min+' دقیقه مطالعه'));rd.appendChild(m);
+  rd.appendChild(el('h1',null,a.title));rd.appendChild(el('p','lead',a.lead));
+  a.body.forEach(function(x){
+    if(x[0]==='p')rd.appendChild(el('p',null,x[1]));
+    else if(x[0]==='h')rd.appendChild(el('h3',null,x[1]));
+    else if(x[0]==='q')rd.appendChild(el('blockquote',null,x[1]));
+    else{var t=el('div','takeaway');var b=el('b',null,'یک قدم برای امروز: ');t.appendChild(b);t.appendChild(document.createTextNode(x[1]));rd.appendChild(t)}
+  });
+  var rel=ARTICLES.filter(function(x){return x.id!==a.id&&x.cat===a.cat});
+  if(rel.length<2)rel=rel.concat(ARTICLES.filter(function(x){return x.id!==a.id&&x.cat!==a.cat}));
+  rel=rel.slice(0,2);
+  if(rel.length){
+    rd.appendChild(el('h3','rel-h','بخوان، بعدی'));
+    var rg=el('div','rel');
+    rel.forEach(function(x){var r=el('button','card');r.type='button';var mm=el('div','meta');mm.appendChild(el('span','tag',x.cat));mm.appendChild(el('span',null,x.min+' دقیقه مطالعه'));r.appendChild(mm);r.appendChild(el('h3',null,x.title));r.onclick=function(){openArticle(x)};rg.appendChild(r)});
+    rd.appendChild(rg);
+  }
+  var b2=el('button','back','← بازگشت به مقاله‌ها');b2.type='button';b2.style.marginTop='32px';b2.onclick=closeArticle;rd.appendChild(b2);
+  home.hidden=true;rv.hidden=false;window.scrollTo(0,0);
+}
+function closeArticle(){rv.hidden=true;home.hidden=false;var s=document.getElementById('articles');if(s)s.scrollIntoView()}
+document.getElementById('home-link').onclick=function(e){e.preventDefault();if(home.hidden){rv.hidden=true;home.hidden=false}window.scrollTo(0,0)};
+Array.prototype.forEach.call(document.querySelectorAll('[data-go]'),function(a){
+  a.onclick=function(e){e.preventDefault();if(home.hidden){rv.hidden=true;home.hidden=false}
+    var t=document.getElementById(a.getAttribute('href').slice(1));if(t)t.scrollIntoView()}
+});
+document.getElementById('theme').onclick=function(){
+  var r=document.documentElement,dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+  r.setAttribute('data-theme',dark?'light':'dark');
+};
+(function(){var n=String(ARTICLES.length).replace(/\d/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[d]});document.getElementById('st-art').textContent=n})();
+renderChips();renderGrid();renderEps();
+/* تنظیمات کسب درآمد: هر مورد خالی باشد، بخش مربوط به آن نمایش داده نمی‌شود */
+var CONFIG={
+  affiliateBase:'',   /* مثال: آدرس پایه لینک همکاری در فروش فروشگاه کتاب شما */
+  productUrl:'',      /* لینک صفحه پرداخت محصول خودتان */
+  sponsorUrl:'',      /* لینک تلگرام، اینستاگرام یا فرم تماس برای تبلیغات */
+  channelUrl:'https://t.me/+Zb4_WCPnehw3NDVk'       /* لینک کانال تلگرام یا خبرنامه برای عضویت */
+};
+var BOOKS=[
+ ['عادت‌های اتمی','جیمز کلیر','ساختن عادت با تغییرهای کوچک و سیستم'],
+ ['کار عمیق','کال نیوپورت','تمرکز بالا در دنیای پر از حواس‌پرتی'],
+ ['ذهنیت','کارول دوک','ذهنیت رشد و تأثیر آن بر یادگیری'],
+ ['قدرت عادت','چارلز دوهیگ','حلقه نشانه، رفتار و پاداش']
+];
+(function(){
+  var box=document.getElementById('books');
+  BOOKS.forEach(function(b){
+    var q=encodeURIComponent('خرید کتاب '+b[0]+' '+b[1]);
+    var a=el('a','book');a.target='_blank';a.rel='noopener sponsored';
+    a.href=CONFIG.affiliateBase?CONFIG.affiliateBase+encodeURIComponent(b[0]):'https://www.google.com/search?q='+q;
+    a.appendChild(el('b',null,b[0]));a.appendChild(el('span',null,b[1]+' · '+b[2]));a.appendChild(el('em',null,'جستجوی کتاب ←'));
+    box.appendChild(a);
+  });
+  if(CONFIG.affiliateBase)document.getElementById('disclose').hidden=false;
+  if(CONFIG.productUrl){document.getElementById('offer-link').href=CONFIG.productUrl;document.getElementById('offer-sec').hidden=false}
+  if(CONFIG.channelUrl){document.getElementById('join-link').href=CONFIG.channelUrl;document.getElementById('join').hidden=false;var hb=document.createElement('a');hb.className='cta head-cta';hb.href=CONFIG.channelUrl;hb.target='_blank';hb.rel='noopener';hb.textContent='کانال تلگرام';document.querySelector('.top .wrap').insertBefore(hb,document.getElementById('theme'))}
+  if(CONFIG.sponsorUrl){document.getElementById('sponsor-link').href=CONFIG.sponsorUrl;document.getElementById('sponsor-sec').hidden=false}
+})();
+
+</script>
+</body>
+</html>
